@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+.container {
+    background: linear-gradient(to top, #a6bcc4, #F1DAD3, #fffcfb);
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+}
+
+.moon {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #FBCBB2;
+    left: 250px;
+    bottom: 180px;
+}
+
+.moon::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fcb896;
+    left: 35px;
+    bottom: 24px;
+}
+.moon::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fcb896;
+    left: 20px;
+    bottom: 45px;
+}
+
+.mountain {
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    border-top: 0px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 150px solid #EC9F91;
+    border-left: 80px solid transparent;
+    z-index: 5;
+}
+
+.mountain-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    border-top: 0px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 150px solid #939fa5;
+    border-left: 0px solid transparent;
+    z-index: 5;
+    transform-origin: top right;
+    transform: skew(15deg);
+}
+
+.mountain-2 {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    border-top: 0px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 100px solid #F8B7A8;
+    border-left: 80px solid transparent;
+    z-index: 5;
+}
+
+.mountain-shadow-2 {
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    border-top: 0px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 150px solid #969696;
+    border-left: 0px solid transparent;
+    z-index: 5;
+    transform-origin: top right;
+    transform: skew(15deg);
+}
+
+/* MINUTO 6 */
